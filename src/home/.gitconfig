@@ -1,0 +1,62 @@
+[http]
+	postBuffer = 524288000
+[credential]
+	helper = store --file ~/.gitcredentials
+[user]
+	name = kasyoumi
+	email = kaakira@outlook.com
+[pull]
+	ff = only
+[http]
+	postBuffer = 624288000
+	version = HTTP/1.1
+[lfs]
+	concurrenttransfers = 1
+	activitytimeout = 3600
+	dialtimeout = 3600
+	keepalive = 3600
+	tlstimeout = 3600
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	s = status
+	lg = log --graph --pretty=format:\"%Cblue%cs - %Cred%h - %Cgreen%an %Creset%s %Cred(%ar)\"
+	a = add
+	cap = "!f() { git commit -m \"$@\"; }; f"
+	# 初次提交
+	fst = "!f() { git cap \"🎉 INIT($1): $2\"; }; f"
+	# 重大发布，里程碑commit，例如：重构完成、完成了一个很巨大的新功能，已经不能用feat（新特性）来形容了
+	epic = "!f() { git cap \"🏆 EPIC($1): $2\"; }; f"
+	# 由于不可控因素（如工期紧张)，例如编写了“硬编码” 、"未来需要改进的代码"等
+	shit = "!f() { git cap \"💩 HACK($1): $2\"; }; f"
+	# “棒！拟声锤子的声音”，重构了下屎山代码，这下我们的代码不那么臭了
+	bang = "!f() { git cap \"🔨 REFACTOR($1): $2\"; }; f" 
+	# 修复在代码审查（pr）过程中，发现的问题
+	fine = "!f() { git cap \"👌 FIX($1): $2\"; }; f"
+	# FEAT： 新特性
+	feat = "!f() { git cap \"✨ FEAT($1): $2\"; }; f"
+	# IMPROVE： 性能优化
+	imp = "!f() { git cap \"⚡ IMPROVE($1): $2\"; }; f"
+	# FIX： 修复
+	fix = "!f() { git cap \"🐛 FIX($1): $2\"; }; f"
+	# RELEASE： 发布相关
+	rlz = "!f() { git cap \"🚀 RELEASE($1): $2\"; }; f"
+	# DOC： 文档相关
+	doc = "!f() { git cap \"📖 DOC($1): $2\"; }; f"
+	# TEST： 增加、更新单元测试、集成测试等
+	test = "!f() { git cap \"🤖 TEST($1): $2\"; }; f"
+	# STYLE： 更改了代码格式、包名等不影响代码逻辑的调整
+	stl = "!f() { git cap \"🎨 STYLE($1): $2\"; }; f"
+	# REMOVE： 单纯的删除了荣誉代码、文件
+	del = "!f() { git cap \"🔥 REMOVE($1): $2\"; }; f"
+	# 暂时性调整，用于暂存，或者已经更改了大量文件，虽然没有完成，但不得不提交了
+	sth = "!f() { git cap \"🚧 STASH($1): $2\"; }; f"
+[core]
+	quotepath = false
+[i18n]
+	logoutputencoding = utf-8
+[lfs "transfer"]
+	maxretries = 5

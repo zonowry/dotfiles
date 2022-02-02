@@ -1,0 +1,28 @@
+=========================
+Fcitx 5.0.11 -- Get Signal No.: 11
+Date: try "date -d @1639905290" if you are using GNU date ***
+ProcessID: 628
+fcitx5(+0xbc54)[0x561bfe625c54]
+/usr/lib/libc.so.6(+0x3cda0)[0x7f94f2f81da0]
+/usr/lib/fcitx5/libxim.so(+0x956f)[0x7f94f167f56f]
+/usr/lib/libFcitx5Core.so.7(_ZNK5fcitx8Instance9postEventERNS_5EventE+0x324)[0x7f94f3492904]
+/usr/lib/libFcitx5Core.so.7(_ZN5fcitx12InputContext19updateUserInterfaceENS_22UserInterfaceComponentEb+0x8e)[0x7f94f34bde9e]
+/usr/lib/libFcitx5Core.so.7(_ZN5fcitx8Instance21deactivateInputMethodERNS_17InputContextEventE+0x5db)[0x7f94f349350b]
+/usr/lib/libFcitx5Core.so.7(_ZNK5fcitx8Instance9postEventERNS_5EventE+0x324)[0x7f94f3492904]
+/usr/lib/libFcitx5Core.so.7(_ZN5fcitx12InputContext11setHasFocusEb+0xb0)[0x7f94f34bd7b0]
+/usr/lib/libFcitx5Core.so.7(_ZN5fcitx10FocusGroup22setFocusedInputContextEPNS_12InputContextE+0xa8)[0x7f94f34bc958]
+/usr/lib/fcitx5/libdbusfrontend.so(+0xf37b)[0x7f94f166a37b]
+/usr/lib/fcitx5/libdbusfrontend.so(+0x136b1)[0x7f94f166e6b1]
+/usr/lib/libFcitx5Utils.so.2(+0x423ad)[0x7f94f33c93ad]
+/usr/lib/libsystemd.so.0(+0x32195)[0x7f94f2e36195]
+/usr/lib/libsystemd.so.0(+0x40571)[0x7f94f2e44571]
+/usr/lib/libsystemd.so.0(+0x48354)[0x7f94f2e4c354]
+/usr/lib/libsystemd.so.0(+0x72149)[0x7f94f2e76149]
+/usr/lib/libsystemd.so.0(sd_event_dispatch+0x12e)[0x7f94f2e7645e]
+/usr/lib/libsystemd.so.0(sd_event_run+0xc9)[0x7f94f2e78c99]
+/usr/lib/libsystemd.so.0(sd_event_loop+0x58)[0x7f94f2e78eb8]
+/usr/lib/libFcitx5Utils.so.2(_ZN5fcitx9EventLoop4execEv+0x12)[0x7f94f33ca962]
+/usr/lib/libFcitx5Core.so.7(_ZN5fcitx8Instance4execEv+0x57)[0x7f94f34999b7]
+fcitx5(+0xaaa2)[0x561bfe624aa2]
+/usr/lib/libc.so.6(__libc_start_main+0xd5)[0x7f94f2f6cb25]
+fcitx5(+0xae9e)[0x561bfe624e9e]

@@ -1,0 +1,64 @@
+Xft.dpi: 96
+Xft.autohint: 0
+Xcursor.size: 32
+Xft.antialias: 1
+Xft.hinting: 0
+Xft.hintstyle:  hintnone
+Xft.rgba: rgb
+Xft.lcdfilter:  lcddefault
+
+! Color Schemes [ black > red > green > yellow > blue > magenta > cyan > white ]
+#define black0                    #373E4D
+#define black1                    #3B4252
+#define black2                    #434C5E
+#define black3                    #4C566A
+#define red0                      #FA5AA4
+#define red1                      #FA74B2
+#define green0                    #2BE491
+#define green1                    #44EB9F
+#define yellow0                   #FA946E
+#define yellow1                   #FAA687
+#define blue0                     #63C5EA
+#define blue1                     #7ACBEA
+#define magenta0                  #CF8EF4
+#define magenta1                  #D8A6F4
+#define cyan0                     #89CCF7
+#define cyan1                     #A1D5F7
+#define white0                    #F9F9F9
+#define white1                    #F7F7F7
+#define white2                    #F4F4F4
+
+*.color1:                         red0
+*.color2:                         green0
+*.color3:                         yellow0
+*.color4:                         blue0
+*.color5:                         magenta0
+*.color6:                         cyan0
+
+*.color9:                         red1
+*.color10:                        green1
+*.color11:                        yellow1
+*.color12:                        blue1
+*.color13:                        magenta1
+*.color14:                        cyan1
+
+! Termody [ Reverse the Visual ]
+*.foreground:                     white0
+*.background:                     black0
+*.cursorColor:                    white0
+
+*.color0:                         black2
+*.color7:                         white1
+
+*.color8:                         black3
+*.color15:                        white2
+
+!*.foreground:                     black0
+!*.background:                     white0
+!*.cursorColor:                    black0
+
+!*.color0:                         white1
+!*.color7:                         black2
+
+!*.color8:                         white2
+!*.color15:                        black3

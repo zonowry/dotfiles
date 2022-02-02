@@ -1,0 +1,9 @@
+.config/wallpaper/00353.jpg filter=lfs diff=lfs merge=lfs -text
+.config/wallpaper/00360.jpg filter=lfs diff=lfs merge=lfs -text
+.config/wallpaper/006.jpg filter=lfs diff=lfs merge=lfs -text
+perview/code-preview.png filter=lfs diff=lfs merge=lfs -text
+perview/float-preview.png filter=lfs diff=lfs merge=lfs -text
+perview/gtk-qt-window-preview.png filter=lfs diff=lfs merge=lfs -text
+preview/code-preview.png filter=lfs diff=lfs merge=lfs -text
+preview/float-preview.png filter=lfs diff=lfs merge=lfs -text
+preview/gtk-qt-window-preview.png filter=lfs diff=lfs merge=lfs -text

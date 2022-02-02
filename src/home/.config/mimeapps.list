@@ -1,0 +1,18 @@
+[Added Associations]
+application/xml=visual-studio-code.desktop;
+font/collection=org.gnome.FontManager.desktop;
+text/plain=visual-studio-code.desktop;
+application/x-shellscript=visual-studio-code.desktop;kitty.desktop;
+application/zip=xarchiver.desktop;thunar.desktop;
+image/png=feh.desktop;
+audio/mpeg=ymuse.desktop;
+image/x-xcursor=feh.desktop;
+
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/clash=clash_win.desktop
+inode/directory=thunar.desktop;

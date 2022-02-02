@@ -1,0 +1,15 @@
+export XDG_CONFIG_HOME="$HOME/.config"
+export LANG=zh_CN.UTF-8
+export LANGUAGE=zh_CN:en_US
+export XDG_CURRENT_DESKTOP=bspwm
+export QT_QPA_PLATFORMTHEME=qt5ct
+export JDK_JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+export _JAVA_AWT_WM_NONREPARENTING=1
+export GTK_IM_MODULE=fcitx5
+export QT_IM_MODULE=fcitx5
+export XMODIFIERS='@im=fcitx5'
+export INPUT_METHOD=fcitx5
+export SDL_IM_MODULE=fcitx5
+export GLFW_IM_MODULE=ibus
+export AWT_TOOLKIT=MToolkit
+export JAVA_HOME=/opt/apps/jdk/jdk1.8.0_261
