@@ -1,0 +1,119 @@
+* {
+  border: none;
+  border-radius: 0px;
+  /*font-family: VictorMono, Iosevka Nerd Font, Noto Sans CJK;*/
+  font-family: Material Design Icons, Iosevka Nerd Font, "WenQuanYi Micro Hei";
+  font-size: 16px;
+  font-style: normal;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(30, 30, 46, 0.1);
+  color: #d0d7ff;
+}
+
+#workspaces {
+  /*background: #282828;*/
+  margin: 5px 5px 5px 5px;
+  padding: 0px 5px 0px 5px;
+  border-radius: 16px;
+  border: solid 0px #f4d9e1;
+  font-weight: normal;
+  font-style: normal;
+}
+#workspaces button {
+  padding: 0px 12px 0px 5px;
+  border-radius: 16px;
+  color: #9ba4b5;
+}
+
+#workspaces button.active {
+  color: #f1f6f9;
+  background-color: #749bc2;
+  border-radius: 16px;
+}
+#workspaces button:hover {
+  background-color: #394867;
+  border-radius: 16px;
+}
+
+#workspaces button.active:hover {
+  background-color: #749bc2;
+}
+
+#custom-date,
+#clock,
+#battery,
+#pulseaudio,
+#wireplumber,
+#network,
+#cpu,
+#memory,
+#tray,
+#custom-randwall,
+#custom-launcher {
+  background: transparent;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 0px 5px 0px;
+  border-radius: 8px;
+  border: solid 0px #f4d9e1;
+}
+
+#custom-date {
+  color: #d3869b;
+}
+
+#custom-power {
+  color: #24283b;
+  background-color: #db4b4b;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  padding: 5px 10px;
+}
+
+#tray {
+  /*background: #282828;*/
+  border-radius: 16px;
+  /*border-right: solid 1px #282738;*/
+}
+
+#clock {
+  font-weight: bold;
+}
+
+#network {
+}
+
+#custom-launcher {
+  /*background: #282828;*/
+  border-radius: 0px 24px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  padding: 0 20px 0 13px;
+  /*border-right: solid 1px #282738;*/
+  font-size: 20px;
+}
+
+#window {
+  /*background: #282828;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 16px;
+  /*border-left: solid 1px #282738;*/
+  /*border-right: solid 1px #282738;*/
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#cpu {
+  font-weight: bold;
+}
+
+#memory {
+  font-weight: bold;
+}

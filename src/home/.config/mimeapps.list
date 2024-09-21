@@ -5,8 +5,10 @@ text/plain=visual-studio-code.desktop;
 application/x-shellscript=visual-studio-code.desktop;kitty.desktop;
 application/zip=xarchiver.desktop;thunar.desktop;
 image/png=feh.desktop;
-audio/mpeg=ymuse.desktop;
+audio/mpeg=ymuse.desktop;yesplaymusic.desktop;
 image/x-xcursor=feh.desktop;
+audio/mp4=yesplaymusic.desktop;
+application/x-visual-studio-code-workspace=code.desktop;
 
 [Default Applications]
 text/html=google-chrome.desktop
@@ -16,3 +18,6 @@ x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
 x-scheme-handler/clash=clash_win.desktop
 inode/directory=thunar.desktop;
+audio/mp4=yesplaymusic.desktop
+audio/mpeg=yesplaymusic.desktop
+application/x-visual-studio-code-workspace=code.desktop

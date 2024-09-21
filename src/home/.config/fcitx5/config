@@ -1,25 +1,25 @@
 [Hotkey]
-# 反复按切换键时进行轮换
+# Enumerate when press trigger key repeatedly
 EnumerateWithTriggerKeys=True
-# 临时在当前和第一个输入法之间切换
+# Temporally switch between first and current Input Method
 AltTriggerKeys=
-# 向前切换输入法
+# Enumerate Input Method Forward
 EnumerateForwardKeys=
-# 向后切换输入法
+# Enumerate Input Method Backward
 EnumerateBackwardKeys=
-# 轮换输入法时跳过第一个输入法
+# Skip first input method while enumerating
 EnumerateSkipFirst=False
-# 向前切换输入分组
+# Enumerate Input Method Group Forward
 EnumerateGroupForwardKeys=
-# 向后切换输入法分组
+# Enumerate Input Method Group Backward
 EnumerateGroupBackwardKeys=
-# 激活输入法
+# Activate Input Method
 ActivateKeys=
-# 取消激活输入法
+# Deactivate Input Method
 DeactivateKeys=
 
 [Hotkey/TriggerKeys]
-0=Control+space
+0=Super+space
 
 [Hotkey/PrevPage]
 0=Up
@@ -37,26 +37,38 @@ DeactivateKeys=
 0=Control+Alt+P
 
 [Behavior]
-# 默认状态为激活
-ActiveByDefault=False
-# 共享输入状态
-ShareInputState=No
-# 在程序中显示预编辑文本
+# Active By Default
+ActiveByDefault=True
+# Reset state on Focus In
+resetStateWhenFocusIn=No
+# Share Input State
+ShareInputState=All
+# Show preedit in application
 PreeditEnabledByDefault=True
-# 切换输入法时显示输入法信息
+# Show Input Method Information when switch input method
 ShowInputMethodInformation=True
-# 在焦点更改时显示输入法信息
+# Show Input Method Information when changing focus
 showInputMethodInformationWhenFocusIn=False
-# 显示紧凑的输入法信息
+# Show compact input method information
 CompactInputMethodInformation=True
-# 显示第一个输入法的信息
+# Show first input method information
 ShowFirstInputMethodInformation=True
-# 默认页大小
+# Default page size
 DefaultPageSize=5
+# Override Xkb Option
+OverrideXkbOption=False
+# Custom Xkb Option
+CustomXkbOption=
 # Force Enabled Addons
 EnabledAddons=
 # Force Disabled Addons
 DisabledAddons=
 # Preload input method to be used by default
 PreloadInputMethod=True
+# Allow input method in the password field
+AllowInputMethodForPassword=False
+# Show preedit text when typing password
+ShowPreeditForPassword=False
+# Interval of saving user data in minutes
+AutoSavePeriod=30
 

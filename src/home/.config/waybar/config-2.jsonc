@@ -1,0 +1,30 @@
+{
+  "height": 30, // Waybar height (to be removed for auto height)
+  "layer": "top", // Waybar at top layer
+  "output": ["HDMI-A-1"],
+  "margin-top": 6,
+  "margin-left": 10,
+  "margin-bottom": 0,
+  "margin-right": 10,
+  "spacing": 5, // Gaps between modules (4px)
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "format": "{icon}",
+    "format-icons": {
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "persistent_workspaces": {
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": []
+    }
+  },
+  "hyprland/window": {
+    "format": "{}"
+  }
+}

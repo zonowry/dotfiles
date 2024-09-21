@@ -1,15 +1,7 @@
-# My dotfiles
+## dotfiles
 
-> Currently not available out of the box
+> 搭配 [Arch + Hyprland 安装美化手册](https://blog.zonowry.com/posts/install-hyprland-on-arch-and-simple-beautify/) 使用。
 
-## Preview
-* vscode code, intellij idea
-![code-preview](/preview/code-preview.png)
+仓库只包含各软件的配置文件，需要先自行安装相关软件。
 
-* neofetch
-![code-preview](/preview/float-preview.png)
-
-* theme preview, left: gtk, right: qt 
-![code-preview](/preview/gtk-qt-window-preview.png)
-
-
+**先备份**当前用户 home 目录下相关文件，批量替换用户名 `zonowry` 为你自己的，然后复制仓库 `src/home` 覆盖到自己的用户目录下。
