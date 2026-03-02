@@ -1,0 +1,5 @@
+// Outputs from existing configuration
+cursor {
+    xcursor-theme "capitaine-cursors-light"
+    xcursor-size 32
+}

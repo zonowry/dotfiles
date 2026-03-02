@@ -1,7 +1,17 @@
-## dotfiles
+# Personal Niri and Hyprland Configuration
 
-> 搭配 [Arch + Hyprland 安装美化手册](https://blog.zonowry.com/posts/install-hyprland-on-arch-and-simple-beautify/) 使用。
+This configuration is based on **dankMaterialShell**.
 
-仓库只包含各软件的配置文件，需要先自行安装相关软件。
+## Window Management Behavior
 
-**先备份**当前用户 home 目录下相关文件，批量替换用户名 `zonowry` 为你自己的，然后复制仓库 `src/home` 覆盖到自己的用户目录下。
+- **Single Window:** Maximized state with rounded corners and gaps disabled.
+- **Multiple Windows:** Rounded corners and gaps enabled.
+
+[preview](https://github.com/user-attachments/assets/b2a83b85-4ff1-4b2b-b639-9fdaf97616e9)
+
+### hyprpm
+
+```bash
+hyprpm add https://github.com/hyprwm/hyprland-plugins
+hyprpm enable hyprbars
+```

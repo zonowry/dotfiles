@@ -1,0 +1,145 @@
+
+workspace "browser" {
+  open-on-output "DP-1"
+}
+
+workspace "kitty" {
+  open-on-output "DP-1"
+  layout {
+    default-column-width { proportion 0.5; }
+  }
+}
+
+workspace "code" {
+  open-on-output "DP-1"
+}
+
+workspace "idea" {
+  open-on-output "DP-1"
+}
+
+workspace "android" {
+  open-on-output "DP-1"
+}
+
+workspace "media" {
+  open-on-output "DP-1"
+}
+
+workspace "note" {
+  open-on-output "DP-1"
+}
+
+workspace "ai" {
+  open-on-output "HDMA-A-1"
+}
+
+
+window-rule {
+  geometry-corner-radius 12
+  clip-to-geometry true
+  draw-border-with-background false
+}
+
+window-rule {
+    match app-id=r#"^(jetbrains-idea|android-studio)$"#
+    match is-floating=true
+    // size = monitor_w*0.4 monitor_h*0.5
+    min-width 600
+    min-height 500
+}
+
+// window-rule {
+//   match is-floating=false
+//   open-maximized-to-edges true
+// }
+
+layer-rule {
+    match namespace="^quickshell$"
+    place-within-backdrop true
+}
+window-rule {
+    match app-id="com.moonlight_stream.Moonlight"
+    open-on-workspace "note"
+}
+// ==========================================
+// 窗口工作区路由 (Workspace Assignments)
+// ==========================================
+// 将指定应用分配到对应的工作区
+window-rule {
+    match app-id=r#"^code$"#
+    open-on-workspace "code"
+    open-focused true
+}
+window-rule {
+    match app-id=r#"^jetbrains-idea$"#
+    open-on-workspace "idea"
+}
+window-rule {
+    match app-id=r#"^jetbrains-studio$"#
+    open-on-workspace "android"
+}
+window-rule {
+    match app-id=r#"^kitty$"#
+    open-on-workspace "kitty"
+}
+window-rule {
+    match app-id="Feishu"
+    match app-id="QQ" title="QQ"
+    open-on-workspace "media"
+}
+window-rule {
+    match app-id=r#"^obsidian$"#
+    open-on-workspace "note"
+}
+
+window-rule {
+    match app-id="zen" title="Zen Browser"
+    match app-id=r#"^google-chrome$"#
+    open-on-workspace "browser"
+}
+
+// Zen Devtools 特殊规则：匹配空标题
+window-rule {
+    match app-id="zen" title=r#"^$"#
+    open-on-workspace "devtools"
+    open-floating true
+}
+
+
+// ==========================================
+// 浮动与对话框规则 (Floating & Dialogs)
+// ==========================================
+// 在 Niri 中，同一 rule 里的多个 match 等同于逻辑“或”(OR)。
+window-rule {
+    // 媒体播放器、文件管理器、系统托盘等
+    match app-id=r#"^(SPlayer|Pot|pot|cloudmusic\.exe|explorer\.exe)$"#
+    
+    // 特定应用的浮动子窗口
+    match app-id="QQ" title="图片查看器"
+    match app-id="Feishu" title="图片"
+    match app-id=r#"^firefox$"# title=r#"^Picture-in-Picture$"#
+    
+    // 系统工具与常规浮动组件 (合并了你的多条规则)
+    match app-id=r#"^(gnome-calculator|galculator|blueman-manager|org\.gnome\.Nautilus|steam|xdg-desktop-portal.*|xarchiver|org\.kde\.polkit-kde-authentication-agent-1|pavucontrol|nm-connection-editor|Color Picker|Network|zoom)$"#
+    
+    // 常见文件选择与弹窗对话框
+    match title=r#"^(Open File|Select a File|Choose wallpaper|Open Folder|Save As|Library).*$"#
+    match app-id=r#"org.quickshell$"#
+    
+    open-floating true
+}
+
+// 全局非焦点透明 (Inactive Opacity = 0.8)
+window-rule {
+    match is-active=false
+    opacity 0.8
+}
+
+// 排除 Chrome 和 Zen 浏览器的非焦点透明度 (覆盖上一条规则)
+// Niri 的规则是按顺序求值的，后声明的规则具有更高的优先级。
+window-rule {
+    match app-id=r#"^(google-chrome|zen)$"# is-active=false
+    opacity 1.0
+}
+
